@@ -4,6 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import TodoPage from "./pages/TodoPage";
 import RegisterPage from "./pages/RegisterPage";
+import React, { useState, useEffect } from 'react'; // useState, useEffect 정의
+import { Navigate } from 'react-router-dom';      // Navigate 정의
+import api from './utils/api';
 
 function App() {
   const [user, setUser] = useState(null);
